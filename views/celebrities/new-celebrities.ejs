@@ -1,0 +1,11 @@
+<h2>New Celebrity</h2>
+<form method="POST" action="/celebrities/create">
+  <input type="text" placeholder="celebrity name" name="celebrity-name" />
+  <input type="text" placeholder="accupation" name="occupation" />
+  <input type="text" placeholder="catch phrase" name="catch-phrase" />
+  <button type="submit">Add</button>
+</form>
+
+<% if (typeof errorMessage !== 'undefined') { %>
+ <%= errorMessage %> 
+<% } %>
